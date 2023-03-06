@@ -1,0 +1,67 @@
+.row{
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+}
+
+.zerocontainer{
+    display: flex;
+    width: 40%;
+}
+
+#inputdisplay{
+    width: 100%;
+    height: 5rem;
+    background: transparent;
+    border: 2px solid var(--input-color);
+    border-radius: 12px;
+    color: var(--text-color);
+    text-align: right;
+    font-size: 2rem;
+    caret-color: var(--sign-color);
+    transition: all 0.2s ease;
+    padding: 0 1rem;
+}
+
+#inputdisplay:focus{
+    outline: none;
+    border: 2px solid rgb(255, 119, 0);
+    padding: 1rem;
+}
+
+
+.buttons:hover{
+    filter: brightness(1.2);
+}
+
+.buttons:active{
+    filter: brightness(1.5);
+}
+
+.footer{
+    background: rgba(0, 0, 0, 0.738);
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    backdrop-filter: blur(10px);
+}
+
+.copyright{
+    font-size: 0.7rem;
+}
+
+.social-icons{
+    display: flex;
+    gap: 0.5rem;
+}
+
+.social-icon{
+    transition: all 0.2s ease;
+}
+
+.social-icon:hover{
+    transform: scale(1.1);
+}
